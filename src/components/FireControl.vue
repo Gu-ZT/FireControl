@@ -4,7 +4,7 @@ import {ref} from "vue";
 let canFireFlag = ref(true);
 
 function pack(count: number): { fill, sixteen, eight, four, two, one } {
-  if (count < 0) canFireFlag.value = flase;
+  if (count < 0) canFireFlag.value = false;
   let out = {
     fill: 0,
     sixteen: 0,
