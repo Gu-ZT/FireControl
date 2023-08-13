@@ -101,7 +101,7 @@ function get() {
   let theory = theories[theoryRef.value];
   let left = calculate(angle, distance, theory.sideT, theory.straightT, true);
   let right = calculate(angle, distance, theory.sideT, theory.straightT);
-  if (directionRef.value == 0) {
+  if (directionRef.value == 1) {
     let mid = left;
     left = right;
     right = mid;
