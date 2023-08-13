@@ -94,7 +94,7 @@ function get() {
     if (targetPosRef.value.x <= 0) canFireFlag.value = false;
     distanceRef.value = Math.floor((targetPosRef.value.x ** 2 + targetPosRef.value.z ** 2) ** 0.5);
     // angleRef.value = Math.floor(Math.atan2(targetPosRef.value.x, targetPosRef.value.z) * 180 / Math.PI)
-    angle = Math.atan2(targetPosRef.value.x, targetPosRef.value.z);
+    angle = Math.atan2(targetPosRef.value.z, targetPosRef.value.x);
     directionRef.value = targetPosRef.value.z > 0 ? 0 : 1;
   } else angle = toRad(angleRef.value);
   let distance = distanceRef.value;
